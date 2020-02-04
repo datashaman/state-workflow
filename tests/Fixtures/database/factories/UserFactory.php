@@ -13,7 +13,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(\Tests\Fixtures\Models\User::class, function (Faker $faker) {
+$factory->define(Ringierimu\StateWorkflow\Tests\Fixtures\Models\User::class, function (Faker $faker) {
     return [
         'name'              => $faker->name,
         'email'             => $faker->unique()->safeEmail,
